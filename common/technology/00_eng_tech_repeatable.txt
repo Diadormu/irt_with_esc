@@ -32,7 +32,7 @@ tech_repeatable_improved_tile_mineral_output = {
 	}
 }
 
-#防御平台伤害
+#防御平台伤害&防御平台船体值
 tech_repeatable_improved_military_station_damage = {
 	area = engineering
 	cost = @repeatableTechBaseCost
@@ -60,39 +60,40 @@ tech_repeatable_improved_military_station_damage = {
 
 	modifier = {
 		shipclass_military_station_damage_mult = 0.1
+		shipclass_military_station_hull_mult = 0.1
 	}
 }
 
 #防御平台船体值
-tech_repeatable_improved_military_station_health = {
-	area = engineering
-	cost = @repeatableTechBaseCost
-	cost_per_level = @repeatableTechLevelCost
-	tier = @repeatableTechTier
-	category = { voidcraft }
-	levels = -1
-	prerequisites = { "tech_defense_platform_hull_1" }
-	weight = @repeatableTechWeight
-
-	weight_modifier = {
-		factor = @repatableTechFactor
-	}
-
-	ai_weight = {
-		factor = 1.0
-	}
-
-	weight_groups = {
-		repeatable
-	}
-	mod_weight_if_group_picked = {
-		repeatable = 0.01
-	}
-
-	modifier = {
-		shipclass_military_station_hull_mult = 0.1
-	}
-}
+#tech_repeatable_improved_military_station_health = {
+#	area = engineering
+#	cost = @repeatableTechBaseCost
+#	cost_per_level = @repeatableTechLevelCost
+#	tier = @repeatableTechTier
+#	category = { voidcraft }
+#	levels = -1
+#	prerequisites = { "tech_defense_platform_hull_1" }
+#	weight = @repeatableTechWeight
+#
+#	weight_modifier = {
+#		factor = @repatableTechFactor
+#	}
+#
+#	ai_weight = {
+#		factor = 1.0
+#	}
+#
+#	weight_groups = {
+#		repeatable
+#	}
+#	mod_weight_if_group_picked = {
+#		repeatable = 0.01
+#	}
+#
+#	modifier = {
+#		shipclass_military_station_hull_mult = 0.1
+#	}
+#}
 
 #船体值
 #tech_repeatable_improved_ship_health = {
@@ -126,7 +127,7 @@ tech_repeatable_improved_military_station_health = {
 #	}
 #}
 
-#装甲值
+#装甲值&船体值
 tech_repeatable_improved_armor_output = {
 	area = engineering
 	cost = @repeatableTechBaseCost
@@ -155,10 +156,11 @@ tech_repeatable_improved_armor_output = {
 
 	modifier = {
 		ship_armor_mult = 0.05
+		ship_hull_mult = 0.01
 	}
 }
 
-#爆炸武器伤害
+#爆炸武器伤害&射速
 tech_repeatable_weapon_type_explosive_damage = {
 	area = engineering
 	cost = @repeatableTechBaseCost
@@ -195,50 +197,51 @@ tech_repeatable_weapon_type_explosive_damage = {
 
 	modifier = {
 		weapon_type_explosive_weapon_damage_mult = 0.05
-	}
-}
-
-#爆炸武器射速
-tech_repeatable_weapon_type_explosive_fire_rate = {
-	area = engineering
-	cost = @repeatableTechBaseCost
-	cost_per_level = @repeatableTechLevelCost
-	tier = @repeatableTechTier
-	category = { propulsion }
-	ai_update_type = military
-	levels = -1
-	prerequisites = { "tech_missiles_3" }
-	weight = @repeatableTechWeight
-
-	weight_modifier = {
-		factor = @repatableTechFactor
-	}
-
-	ai_weight = {
-		factor = 1.0
-		modifier = {
-			factor = @favored_weapon_ai_tech_factor
-			is_preferred_weapons = weapon_type_explosive
-		}
-		modifier = {
-			factor = @disfavored_weapon_ai_tech_factor
-			NOT = { is_preferred_weapons = weapon_type_explosive }
-		}
-	}
-
-	weight_groups = {
-		repeatable
-	}
-	mod_weight_if_group_picked = {
-		repeatable = 0.01
-	}
-
-	modifier = {
 		weapon_type_explosive_weapon_fire_rate_mult = 0.05
 	}
 }
 
-#动能武器伤害
+#爆炸武器射速
+#tech_repeatable_weapon_type_explosive_fire_rate = {
+#	area = engineering
+#	cost = @repeatableTechBaseCost
+#	cost_per_level = @repeatableTechLevelCost
+#	tier = @repeatableTechTier
+#	category = { propulsion }
+#	ai_update_type = military
+#	levels = -1
+#	prerequisites = { "tech_missiles_3" }
+#	weight = @repeatableTechWeight
+#
+#	weight_modifier = {
+#		factor = @repatableTechFactor
+#	}
+#
+#	ai_weight = {
+#		factor = 1.0
+#		modifier = {
+#			factor = @favored_weapon_ai_tech_factor
+#			is_preferred_weapons = weapon_type_explosive
+#		}
+#		modifier = {
+#			factor = @disfavored_weapon_ai_tech_factor
+#			NOT = { is_preferred_weapons = weapon_type_explosive }
+#		}
+#	}
+#
+#	weight_groups = {
+#		repeatable
+#	}
+#	mod_weight_if_group_picked = {
+#		repeatable = 0.01
+#	}
+#
+#	modifier = {
+#		weapon_type_explosive_weapon_fire_rate_mult = 0.05
+#	}
+#}
+
+#动能武器伤害&射速
 tech_repeatable_weapon_type_kinetic_damage = {
 	area = engineering
 	cost = @repeatableTechBaseCost
@@ -275,48 +278,49 @@ tech_repeatable_weapon_type_kinetic_damage = {
 
 	modifier = {
 		weapon_type_kinetic_weapon_damage_mult = 0.05
+		weapon_type_kinetic_weapon_fire_rate_mult = 0.05
 	}
 }
 
 #动能武器射速
-tech_repeatable_weapon_type_kinetic_fire_rate = {
-	area = engineering
-	cost = @repeatableTechBaseCost
-	cost_per_level = @repeatableTechLevelCost
-	tier = @repeatableTechTier
-	category = { propulsion }
-	ai_update_type = military
-	levels = -1
-	prerequisites = { "tech_mass_drivers_3" }
-	weight = @repeatableTechWeight
-
-	weight_modifier = {
-		factor = @repatableTechFactor
-	}
-
-	ai_weight = {
-		factor = 1.0
-		modifier = {
-			factor = @favored_weapon_ai_tech_factor
-			is_preferred_weapons = weapon_type_kinetic
-		}
-		modifier = {
-			factor = @disfavored_weapon_ai_tech_factor
-			NOT = { is_preferred_weapons = weapon_type_kinetic }
-		}
-	}
-
-	weight_groups = {
-		repeatable
-	}
-	mod_weight_if_group_picked = {
-		repeatable = 0.01
-	}
-
-	modifier = {
-		weapon_type_kinetic_weapon_fire_rate_mult = 0.05
-	}
-}
+#tech_repeatable_weapon_type_kinetic_fire_rate = {
+#	area = engineering
+#	cost = @repeatableTechBaseCost
+#	cost_per_level = @repeatableTechLevelCost
+#	tier = @repeatableTechTier
+#	category = { propulsion }
+#	ai_update_type = military
+#	levels = -1
+#	prerequisites = { "tech_mass_drivers_3" }
+#	weight = @repeatableTechWeight
+#
+#	weight_modifier = {
+#		factor = @repatableTechFactor
+#	}
+#
+#	ai_weight = {
+#		factor = 1.0
+#		modifier = {
+#			factor = @favored_weapon_ai_tech_factor
+#			is_preferred_weapons = weapon_type_kinetic
+#		}
+#		modifier = {
+#			factor = @disfavored_weapon_ai_tech_factor
+#			NOT = { is_preferred_weapons = weapon_type_kinetic }
+#		}
+#	}
+#
+#	weight_groups = {
+#		repeatable
+#	}
+#	mod_weight_if_group_picked = {
+#		repeatable = 0.01
+#	}
+#
+#	modifier = {
+#		weapon_type_kinetic_weapon_fire_rate_mult = 0.05
+#	}
+#}
 
 #行星建造速度
 tech_repeatable_reduced_building_time = {

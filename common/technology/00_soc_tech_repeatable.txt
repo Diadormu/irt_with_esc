@@ -61,35 +61,35 @@ tech_repeatable_improved_core_system_cap = {
 }
 
 #帝国领袖容量
-#tech_repeatable_improved_leader_cap = {
-#	area = society
-#	cost = @repeatableTechBaseCost
-#	cost_per_level = @repeatableTechLevelCost
-#	tier = @repeatableTechTier
-#	category = { statecraft }
-#	levels = -1
-#	prerequisites = { "tech_adaptive_bureaucracy" }
-#	weight = @repeatableTechWeight
-#
-#	weight_modifier = {
-#		factor = @repatableTechFactor
-#	}
-#
-#	ai_weight = {
-#		factor = 1.0
-#	}
-#
-#	weight_groups = {
-#		repeatable
-#	}
-#	mod_weight_if_group_picked = {
-#		repeatable = 0.01
-#	}
-#
-#	modifier = {
-#		country_leader_cap = 1
-#	}
-#}
+tech_repeatable_improved_leader_cap = {
+	area = society
+	cost = @repeatableTechBaseCost
+	cost_per_level = @repeatableTechLevelCost
+	tier = @repeatableTechTier
+	category = { statecraft }
+	levels = 5
+	prerequisites = { "tech_adaptive_bureaucracy" }
+	weight = @repeatableTechWeight
+
+	weight_modifier = {
+		factor = @repatableTechFactor
+	}
+
+	ai_weight = {
+		factor = 1.0
+	}
+
+	weight_groups = {
+		repeatable
+	}
+	mod_weight_if_group_picked = {
+		repeatable = 0.01
+	}
+
+	modifier = {
+		country_leader_cap = 1
+	}
+}
 
 #法令持续时间
 #tech_repeatable_improved_edict_length = {
@@ -122,7 +122,7 @@ tech_repeatable_improved_core_system_cap = {
 #	}
 #}
 
-#陆军伤害
+#陆军伤害&生命值
 tech_repeatable_improved_army_damage = {
 	area = society
 	cost = @repeatableTechBaseCost
@@ -150,39 +150,40 @@ tech_repeatable_improved_army_damage = {
 
 	modifier = {
 		army_damage_mult = 0.1
+		army_health = 0.1
 	}
 }
 
 #陆军生命值
-tech_repeatable_improved_army_health = {
-	area = society
-	cost = @repeatableTechBaseCost
-	cost_per_level = @repeatableTechLevelCost
-	tier = @repeatableTechTier
-	category = { military_theory }
-	levels = -1
-	prerequisites = { "tech_combat_training" }
-	weight = @repeatableTechWeight
-
-	weight_modifier = {
-		factor = @repatableTechFactor
-	}
-
-	ai_weight = {
-		factor = 1.0
-	}
-
-	weight_groups = {
-		repeatable
-	}
-	mod_weight_if_group_picked = {
-		repeatable = 0.01
-	}
-
-	modifier = {
-		army_health = 0.1
-	}
-}
+#tech_repeatable_improved_army_health = {
+#	area = society
+#	cost = @repeatableTechBaseCost
+#	cost_per_level = @repeatableTechLevelCost
+#	tier = @repeatableTechTier
+#	category = { military_theory }
+#	levels = -1
+#	prerequisites = { "tech_combat_training" }
+#	weight = @repeatableTechWeight
+#
+#	weight_modifier = {
+#		factor = @repatableTechFactor
+#	}
+#
+#	ai_weight = {
+#		factor = 1.0
+#	}
+#
+#	weight_groups = {
+#		repeatable
+#	}
+#	mod_weight_if_group_picked = {
+#		repeatable = 0.01
+#	}
+#
+#	modifier = {
+#		army_health = 0.1
+#	}
+#}
 
 #领袖预期寿命
 tech_repeatable_improved_leader_life_span = {
@@ -215,7 +216,7 @@ tech_repeatable_improved_leader_life_span = {
 	}
 }
 
-#海军容量
+#海军容量&指挥上限
 tech_repeatable_naval_cap = {
 	area = society
 	cost = @repeatableTechBaseCost
@@ -243,39 +244,40 @@ tech_repeatable_naval_cap = {
 
 	modifier = {
 		country_naval_cap_add = 20
+		command_limit_add = 10
 	}
 }
 
 #舰队指挥上限
-tech_repeatable_command_limit = {
-	area = society
-	cost = @repeatableTechBaseCost
-	cost_per_level = @repeatableTechLevelCost
-	tier = @repeatableTechTier
-	category = { military_theory }
-	levels = 5
-	prerequisites = { "tech_doctrine_fleet_size_5" }
-	weight = @repeatableTechWeight
-
-	weight_modifier = {
-		factor = @repatableTechFactor
-	}
-
-	ai_weight = {
-		factor = 1.0
-	}
-
-	weight_groups = {
-		repeatable
-	}
-	mod_weight_if_group_picked = {
-		repeatable = 0.01
-	}
-
-	modifier = {
-		command_limit_add = 10
-	}
-}
+#tech_repeatable_command_limit = {
+#	area = society
+#	cost = @repeatableTechBaseCost
+#	cost_per_level = @repeatableTechLevelCost
+#	tier = @repeatableTechTier
+#	category = { military_theory }
+#	levels = 5
+#	prerequisites = { "tech_doctrine_fleet_size_5" }
+#	weight = @repeatableTechWeight
+#
+#	weight_modifier = {
+#		factor = @repatableTechFactor
+#	}
+#
+#	ai_weight = {
+#		factor = 1.0
+#	}
+#
+#	weight_groups = {
+#		repeatable
+#	}
+#	mod_weight_if_group_picked = {
+#		repeatable = 0.01
+#	}
+#
+#	modifier = {
+#		command_limit_add = 10
+#	}
+#}
 
 #恒星基地容量
 tech_repeatable_improved_starbase_capacity = {
@@ -308,7 +310,7 @@ tech_repeatable_improved_starbase_capacity = {
 	}
 }
 
-#舰载机伤害
+#舰载机伤害&射速
 tech_repeatable_weapon_type_strike_craft_fire_damage = {
 	area = society
 	cost = @repeatableTechBaseCost
@@ -345,45 +347,46 @@ tech_repeatable_weapon_type_strike_craft_fire_damage = {
 
 	modifier = {
 		weapon_type_strike_craft_weapon_damage_mult = 0.10
-	}
-}
-
-#
-tech_repeatable_weapon_type_strike_craft_fire_rate = {
-	area = society
-	cost = @repeatableTechBaseCost
-	cost_per_level = @repeatableTechLevelCost
-	tier = @repeatableTechTier
-	category = { military_theory }
-	ai_update_type = military
-	levels = -1
-	prerequisites = { "tech_strike_craft_3" }
-	weight = @repeatableTechWeight
-
-	weight_modifier = {
-		factor = @repatableTechFactor
-	}
-
-	ai_weight = {
-		factor = 1.0
-		modifier = {
-			factor = @favored_weapon_ai_tech_factor
-			is_preferred_weapons = weapon_type_strike_craft
-		}
-		modifier = {
-			factor = @disfavored_weapon_ai_tech_factor
-			NOT = { is_preferred_weapons = weapon_type_strike_craft }
-		}
-	}
-
-	weight_groups = {
-		repeatable
-	}
-	mod_weight_if_group_picked = {
-		repeatable = 0.01
-	}
-
-	modifier = {
 		weapon_type_strike_craft_weapon_fire_rate_mult = 0.10
 	}
 }
+
+#舰载机射速
+#tech_repeatable_weapon_type_strike_craft_fire_rate = {
+#	area = society
+#	cost = @repeatableTechBaseCost
+#	cost_per_level = @repeatableTechLevelCost
+#	tier = @repeatableTechTier
+#	category = { military_theory }
+#	ai_update_type = military
+#	levels = -1
+#	prerequisites = { "tech_strike_craft_3" }
+#	weight = @repeatableTechWeight
+#
+#	weight_modifier = {
+#		factor = @repatableTechFactor
+#	}
+#
+#	ai_weight = {
+#		factor = 1.0
+#		modifier = {
+#			factor = @favored_weapon_ai_tech_factor
+#			is_preferred_weapons = weapon_type_strike_craft
+#		}
+#		modifier = {
+#			factor = @disfavored_weapon_ai_tech_factor
+#			NOT = { is_preferred_weapons = weapon_type_strike_craft }
+#		}
+#	}
+#
+#	weight_groups = {
+#		repeatable
+#	}
+#	mod_weight_if_group_picked = {
+#		repeatable = 0.01
+#	}
+#
+#	modifier = {
+#		weapon_type_strike_craft_weapon_fire_rate_mult = 0.10
+#	}
+#}
