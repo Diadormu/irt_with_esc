@@ -87,7 +87,7 @@ tech_repeatable_improved_leader_cap = {
 	}
 
 	modifier = {
-		country_leader_cap = 1
+		country_leader_cap_add = 1
 	}
 }
 

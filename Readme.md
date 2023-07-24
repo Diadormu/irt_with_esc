@@ -17,3 +17,5 @@
 - Added 5 tiers of Imperial Leader capacity repeatable tech (from the original removal);
 
 In the future may try to be compatible with Laquly's Integrated Repeatable Technologies mod
+
+[⭐Github🌟](https://github.com/Diadormu/irt_with_esc)
