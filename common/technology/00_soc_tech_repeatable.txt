@@ -223,7 +223,7 @@ tech_repeatable_naval_cap = {
 	cost_per_level = @repeatableTechLevelCost
 	tier = @repeatableTechTier
 	category = { military_theory }
-	levels = 7
+	levels = 6
 	prerequisites = { "tech_doctrine_navy_size_4" }
 	weight = @repeatableTechWeight
 

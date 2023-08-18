@@ -9,8 +9,8 @@
   added 1% Ship Hull to Armor Hit repeatable tech
 - 添加了5层帝国领袖容量循环科技（来自原版移除内容）；  
   added 5 levels of Leader Capacity repeatable tech (from the original removal)
-- 指挥上限循环提升至7层  
-  Command Limit repeatable tech raised to level 7
+- 指挥上限循环提升至6层  
+  Command Limit repeatable tech raised to level 6
 
 将来可能会尝试兼容零者的循环科技自选mod  
 In the future may try to be compatible with Laquly's Integrated Repeatable Technologies mod
@@ -20,15 +20,9 @@ In the future may try to be compatible with Laquly's Integrated Repeatable Techn
 已修改的原版或ESC文件：
 modifyed original or ESC files:
 ```
-common/on_actions/esc_on_actions.txt
-common/scripted_triggers/esc_scripted_triggers.txt
 common/technology/00_eng_tech_repeatable.txt
 common/technology/00_phys_tech_repeatable.txt
 common/technology/00_soc_tech_repeatable.txt
-common/technology/esc_technology_biological.txt
-common/technology/esc_technology_nanites.txt
-common/technology/esc_technology_psionic.txt
-events/esc_events_action_tracking.txt
 ```
 
 [⭐Github🌟](https://github.com/Diadormu/irt_with_esc)
