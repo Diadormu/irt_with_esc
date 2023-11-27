@@ -61,35 +61,35 @@ tech_repeatable_improved_core_system_cap = {
 }
 
 #帝国领袖容量
-tech_repeatable_improved_leader_cap = {
-	area = society
-	cost = @repeatableTechBaseCost
-	cost_per_level = @repeatableTechLevelCost
-	tier = @repeatableTechTier
-	category = { statecraft }
-	levels = 5
-	prerequisites = { "tech_adaptive_bureaucracy" }
-	weight = @repeatableTechWeight
-
-	weight_modifier = {
-		factor = @repatableTechFactor
-	}
-
-	ai_weight = {
-		factor = 1.0
-	}
-
-	weight_groups = {
-		repeatable
-	}
-	mod_weight_if_group_picked = {
-		repeatable = 0.01
-	}
-
-	modifier = {
-		country_leader_cap_add = 1
-	}
-}
+#tech_repeatable_improved_leader_cap = {
+#	area = society
+#	cost = @repeatableTechBaseCost
+#	cost_per_level = @repeatableTechLevelCost
+#	tier = @repeatableTechTier
+#	category = { statecraft }
+#	levels = 5
+#	prerequisites = { "tech_adaptive_bureaucracy" }
+#	weight = @repeatableTechWeight
+#
+#	weight_modifier = {
+#		factor = @repatableTechFactor
+#	}
+#
+#	ai_weight = {
+#		factor = 1.0
+#	}
+#
+#	weight_groups = {
+#		repeatable
+#	}
+#	mod_weight_if_group_picked = {
+#		repeatable = 0.01
+#	}
+#
+#	modifier = {
+#		country_leader_cap_add = 1
+#	}
+#}
 
 #法令持续时间
 #tech_repeatable_improved_edict_length = {

@@ -7,8 +7,8 @@
   merged Defense Platform Damage and Hull, Army Damage and Health, Naval Capacity and Fleet Command Limit
 - 给装甲值循环科技添加了1%的船体值；  
   added 1% Ship Hull to Armor Hit repeatable tech
-- 添加了5层帝国领袖容量循环科技（来自原版移除内容）；  
-  added 5 levels of Leader Capacity repeatable tech (from the original removal)
+- ~~添加了5层帝国领袖容量循环科技（来自原版移除内容）；~~  
+  ~~added 5 levels of Leader Capacity repeatable tech (from the original removal)~~
 - 指挥上限循环提升至6层  
   Command Limit repeatable tech raised to level 6
 
