@@ -3,5 +3,5 @@ tags={
 	"Technologies"
 }
 name="Integrated Repeatable Technologies with Extra Ship Component"
-supported_version="3.10.*"
+supported_version="3.14.*"
 remote_file_id="3007980030"
