@@ -6,7 +6,12 @@ tech_repeatable_improved_tile_food_output = {
 	tier = @repeatableTechTier
 	category = { biology }
 	levels = -1
+
+	potential = {
+		is_wilderness_empire = no
+	}
 	prerequisites = { "tech_gene_crops" }
+	
 	weight = @repeatableTechWeight
 
 	weight_modifier = {
@@ -130,7 +135,7 @@ tech_repeatable_improved_army_damage = {
 	tier = @repeatableTechTier
 	category = { military_theory }
 	#levels = -1
-	levels = 100
+	levels = 200
 	prerequisites = { "tech_combat_training" }
 	weight = @repeatableTechWeight
 
@@ -320,7 +325,7 @@ tech_repeatable_weapon_type_strike_craft_fire_damage = {
 	category = { military_theory }
 	ai_update_type = military
 	#levels = -1
-	levels = 100
+	levels = 200
 	prerequisites = { "tech_strike_craft_3" }
 	weight = @repeatableTechWeight
 

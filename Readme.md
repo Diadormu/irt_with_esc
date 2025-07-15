@@ -1,8 +1,8 @@
 # Integrated Repeatable Technologies with Extra Ship Components NEXT
 # 兼容ESC的合并循环科技
 
-## 注意：为了减少数值溢出带来的问题，所有军事相关的科技都限制上限100层，如果不想受此限制请使用零者的[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2436969913]整合循环科技[/url]
-## Note: In order to reduce the problems caused by overflow, all military-related technologies are limited to a maximum of 100 levels, if you don't want to be subjected to this limitation, please use the Laquly's [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2436969913]Integrated Repeatable Technologies[/url]
+## 注意：为了减少数值溢出带来的问题，所有军事相关的科技都限制上限200层，如果不想受此限制请使用零者的[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2436969913]整合循环科技[/url]
+## Note: In order to reduce the problems caused by overflow, all military-related technologies are limited to a maximum of 200 levels, if you don't want to be subjected to this limitation, please use the Laquly's [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2436969913]Integrated Repeatable Technologies[/url]
 
 - 合并所有原版和ESC武器的伤害和射速循环科技；  
   merged Damage and Fire Rate repeatable techs for all original and ESC weapons

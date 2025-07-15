@@ -10,7 +10,7 @@ esc_tech_repeatable_bio_damage = {
 	tier = @repeatableTechTier
 	category = { biology }
 	#levels = -1
-	levels = 100
+	levels = 200
 	prerequisites = { "esc_tech_biological_weapons" }
 	weight = @repeatableTechWeight
 
@@ -70,13 +70,13 @@ esc_tech_repeatable_bio_fire_rate = {
 	weight = @repeatableTechWeight
 
 	potential = {
-#		NOT = { has_global_flag = ESC_GLOBAL_FLAG_biological_weapons_forbidden }
+		#NOT = { has_global_flag = ESC_GLOBAL_FLAG_biological_weapons_forbidden }
 		has_global_flag = irt_with_esc
 	}
 
-#	modifier = {
-#		weapon_type_biological_weapon_fire_rate_mult = 0.05
-#	}
+	#modifier = {
+	#	weapon_type_biological_weapon_fire_rate_mult = 0.05
+	#}
 
 	weight_modifier = {
 		factor = @repatableTechFactor
@@ -121,7 +121,7 @@ esc_tech_repeatable_nanite_damage = {
 	tier = @repeatableTechTier
 	category = { computing }
 	#levels = -1
-	levels = 100
+	levels = 200
 	prerequisites = { "esc_tech_synthetic_lifeform_studies" }
 	weight = @repeatableTechWeight
 
@@ -183,13 +183,13 @@ esc_tech_repeatable_nanite_fire_rate = {
 	weight = @repeatableTechWeight
 
 	potential = {
-#		NOT = { has_global_flag = ESC_GLOBAL_FLAG_nanite_weapons_forbidden }
+		#NOT = { has_global_flag = ESC_GLOBAL_FLAG_nanite_weapons_forbidden }
 		has_global_flag = irt_with_esc
 	}
 
-#	modifier = {
-#		weapon_type_nanite_weapon_fire_rate_mult = 0.05
-#	}
+	#modifier = {
+	#	weapon_type_nanite_weapon_fire_rate_mult = 0.05
+	#}
 
 	weight_modifier = {
 		factor = @repatableTechFactor
@@ -236,7 +236,7 @@ esc_tech_repeatable_psionic_damage = {
 	tier = @repeatableTechTier
 	category = { psionics }
 	#levels = -1
-	levels = 100
+	levels = 200
 	prerequisites = { "esc_tech_psionic_weapons" }
 	weight = @repeatableTechWeight
 
@@ -298,13 +298,13 @@ esc_tech_repeatable_psionic_fire_rate = {
 	weight = @repeatableTechWeight
 
 	potential = {
-#		NOT = { has_global_flag = ESC_GLOBAL_FLAG_psionic_weapons_forbidden }
+		#NOT = { has_global_flag = ESC_GLOBAL_FLAG_psionic_weapons_forbidden }
 		has_global_flag = irt_with_esc
 	}
 
-#	modifier = {
-#		weapon_type_psionic_weapon_fire_rate_mult = 0.05
-#	}
+	#modifier = {
+	#	weapon_type_psionic_weapon_fire_rate_mult = 0.05
+	#}
 
 	weight_modifier = {
 		factor = @repatableTechFactor

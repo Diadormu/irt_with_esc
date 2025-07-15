@@ -40,7 +40,7 @@ tech_repeatable_improved_military_station_damage = {
 	tier = @repeatableTechTier
 	category = { voidcraft }
 	#levels = -1
-	levels = 100
+	levels = 200
 	prerequisites = { "tech_defense_platform_hull_1" }
 	weight = @repeatableTechWeight
 
@@ -137,7 +137,7 @@ tech_repeatable_improved_armor_output = {
 	category = { materials }
 	ai_update_type = all
 	#levels = -1
-	levels = 100
+	levels = 200
 	prerequisites = { "tech_ship_armor_3" }
 	weight = @repeatableTechWeight
 
@@ -171,8 +171,13 @@ tech_repeatable_weapon_type_explosive_damage = {
 	category = { propulsion }
 	ai_update_type = military
 	#levels = -1
-	levels = 100
-	prerequisites = { "tech_missiles_3" }
+	levels = 200
+	prerequisites = {
+		OR = {
+			tech_missiles_3
+			tech_swarmer_missiles_2
+		}
+	}
 	weight = @repeatableTechWeight
 
 	weight_modifier = {
@@ -213,7 +218,12 @@ tech_repeatable_weapon_type_explosive_damage = {
 #	category = { propulsion }
 #	ai_update_type = military
 #	levels = -1
-#	prerequisites = { "tech_missiles_3" }
+#	prerequisites = {
+#		OR = {
+#			tech_missiles_3
+#			tech_swarmer_missiles_2
+#		}
+#	}
 #	weight = @repeatableTechWeight
 #
 #	weight_modifier = {
@@ -253,7 +263,7 @@ tech_repeatable_weapon_type_kinetic_damage = {
 	category = { propulsion }
 	ai_update_type = military
 	#levels = -1
-	levels = 100
+	levels = 200
 	prerequisites = { "tech_mass_drivers_3" }
 	weight = @repeatableTechWeight
 
