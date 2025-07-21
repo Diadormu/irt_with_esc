@@ -1,0 +1,3 @@
+﻿l_simp_chinese:
+  edict_disable_infinity_thesis: "停止无限课题"
+  edict_disable_infinity_thesis_desc: "从循环科技列表中移除§Y应用无限课题§!"

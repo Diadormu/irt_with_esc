@@ -14,6 +14,8 @@
   ~~added 5 levels of Leader Capacity repeatable tech (from the original removal)~~
 - 指挥上限循环提升至6层  
   Command Limit repeatable tech raised to level 6
+- 添加一条用于停止无限课题的法令  
+  Add an edict for disable Infinity Thesis
 - 不需要本地化  
   The localization is from ESC and the original
 
