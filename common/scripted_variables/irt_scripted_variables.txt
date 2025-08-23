@@ -1,0 +1,3 @@
+# REPEATABLE TECHS
+@repeatableTechBaseCost = 100000
+@repeatableTechLevelCost = 10000

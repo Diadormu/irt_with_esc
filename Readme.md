@@ -12,8 +12,8 @@
   added 1% Ship Hull to Armor Hit repeatable tech
 - ~~添加了5层帝国领袖容量循环科技（来自原版移除内容）；~~  
   ~~added 5 levels of Leader Capacity repeatable tech (from the original removal)~~
-- 指挥上限循环提升至6层  
-  Command Limit repeatable tech raised to level 6
+- ~~指挥上限循环提升至6层~~  
+  ~~Command Limit repeatable tech raised to level 6~~
 - 添加一条用于停止无限课题的法令  
   Add an edict for disable Infinity Thesis
 - 不需要本地化  
