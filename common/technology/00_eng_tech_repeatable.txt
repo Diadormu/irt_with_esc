@@ -39,8 +39,7 @@ tech_repeatable_improved_military_station_damage = {
 	cost_per_level = @repeatableTechLevelCost
 	tier = @repeatableTechTier
 	category = { voidcraft }
-	#levels = -1
-	levels = 200
+	levels = -1
 	prerequisites = { "tech_defense_platform_hull_1" }
 	weight = @repeatableTechWeight
 
@@ -136,8 +135,7 @@ tech_repeatable_improved_armor_output = {
 	tier = @repeatableTechTier
 	category = { materials }
 	ai_update_type = all
-	#levels = -1
-	levels = 200
+	levels = -1
 	prerequisites = { "tech_ship_armor_3" }
 	weight = @repeatableTechWeight
 
@@ -170,8 +168,7 @@ tech_repeatable_weapon_type_explosive_damage = {
 	tier = @repeatableTechTier
 	category = { propulsion }
 	ai_update_type = military
-	#levels = -1
-	levels = 200
+	levels = -1
 	prerequisites = {
 		OR = {
 			tech_missiles_3
@@ -262,8 +259,7 @@ tech_repeatable_weapon_type_kinetic_damage = {
 	tier = @repeatableTechTier
 	category = { propulsion }
 	ai_update_type = military
-	#levels = -1
-	levels = 200
+	levels = -1
 	prerequisites = { "tech_mass_drivers_3" }
 	weight = @repeatableTechWeight
 

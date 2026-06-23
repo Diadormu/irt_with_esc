@@ -9,8 +9,7 @@ esc_tech_repeatable_bio_damage = {
 	cost_per_level = @repeatableTechLevelCost
 	tier = @repeatableTechTier
 	category = { biology }
-	#levels = -1
-	levels = 200
+	levels = -1
 	prerequisites = { "esc_tech_biological_weapons" }
 	weight = @repeatableTechWeight
 
@@ -120,8 +119,7 @@ esc_tech_repeatable_nanite_damage = {
 	cost_per_level = @repeatableTechLevelCost
 	tier = @repeatableTechTier
 	category = { computing }
-	#levels = -1
-	levels = 200
+	levels = -1
 	prerequisites = { "esc_tech_synthetic_lifeform_studies" }
 	weight = @repeatableTechWeight
 
@@ -235,8 +233,7 @@ esc_tech_repeatable_psionic_damage = {
 	cost_per_level = @repeatableTechLevelCost
 	tier = @repeatableTechTier
 	category = { psionics }
-	#levels = -1
-	levels = 200
+	levels = -1
 	prerequisites = { "esc_tech_psionic_weapons" }
 	weight = @repeatableTechWeight
 

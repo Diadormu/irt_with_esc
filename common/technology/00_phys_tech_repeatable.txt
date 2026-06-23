@@ -37,8 +37,7 @@ tech_repeatable_improved_shield_output = {
 	tier = @repeatableTechTier
 	category = { field_manipulation }
 	ai_update_type = all
-	#levels = -1
-	levels = 200
+	levels = -1
 	prerequisites = { "tech_shields_4" }
 	weight = @repeatableTechWeight
 
@@ -70,8 +69,7 @@ tech_repeatable_weapon_type_energy_damage = {
 	tier = @repeatableTechTier
 	category = { particles }
 	ai_update_type = military
-	#levels = -1
-	levels = 200
+	levels = -1
 	prerequisites = { "tech_lasers_4" }
 	weight = @repeatableTechWeight
 
